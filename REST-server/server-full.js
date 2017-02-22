@@ -12,7 +12,8 @@ const express = require('express'),
 const clientSessions = require("client-sessions");
 
 var port = process.env.PORT || 3003;
-var mongoUrl = process.env.PORT ? 'mongodb://twixapp:misterbit@ds117889.mlab.com:17889/final-sprint' : 'mongodb://localhost:27017/final-sprint';
+// var mongoUrl = process.env.PORT ? 'mongodb://twixapp:misterbit@ds117889.mlab.com:17889/final-sprint' : 'mongodb://localhost:27017/final-sprint';
+var mongoUrl = 'mongodb://twixapp:misterbit@ds117889.mlab.com:17889/final-sprint' 
 
 const app = express();
 app.use('/', express.static(__dirname));
